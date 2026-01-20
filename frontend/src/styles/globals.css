@@ -1,0 +1,7 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system;
+}
