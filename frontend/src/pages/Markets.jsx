@@ -8,16 +8,20 @@ const Markets = () => {
   if (loading) return <Loader />;
 
   return (
-    <>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-2">Markets</h2>
-        <p className="text-gray-600">
-          Browse and participate in active prediction markets.
+    <section className="max-w-7xl mx-auto pt-16 pb-20">
+      {/* Header */}
+      <div className="mb-10">
+        <h1 className="text-3xl font-bold text-white mb-2">
+          Markets
+        </h1>
+        <p className="text-gray-400">
+          Browse active prediction markets and trade on outcomes.
         </p>
       </div>
 
+      {/* Market Grid */}
       <MarketList markets={markets} />
-    </>
+    </section>
   );
 };
 
