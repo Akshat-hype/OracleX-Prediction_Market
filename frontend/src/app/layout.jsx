@@ -6,8 +6,17 @@ const Layout = ({ children }) => {
     <div className="min-h-screen bg-[#0b0b12] text-gray-200 flex flex-col">
       <Navbar />
 
-      {/* IMPORTANT: no py here */}
-      <main className="flex-1 max-w-7xl mx-auto w-full px-6">
+      <main
+        className="
+          flex-1
+          w-full
+          max-w-7xl
+          mx-auto
+          px-4
+          sm:px-6
+          lg:px-8
+        "
+      >
         {children}
       </main>
 

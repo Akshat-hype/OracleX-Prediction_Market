@@ -1,10 +1,20 @@
 @import "tailwindcss";
 
-html {
-  background-color: #0b0b12;
+@layer base {
+  h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-lg sm:text-xl;
+  }
+
+  p {
+    @apply text-sm sm:text-base;
+  }
 }
 
-body {
-  background-color: #0b0b12;
-  color: #e5e7eb; /* gray-200 */
-}
